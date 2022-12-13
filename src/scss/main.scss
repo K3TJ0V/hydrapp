@@ -3,11 +3,47 @@
 @import "_variables";
 @import "modules/hello.scss";
 
-body {
-  background: $wtf;
+
+body{
+  background-color: #3767AD;
+  font-family: 'Ubuntu';
+}
+.header{
+  margin-bottom: 50px;
   color: #fff;
+  font-size: 48px;
+}
+.main{
+  width: 100vw;
+  height: 85vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  align-items: center;
+  &__add{
+    margin-bottom: 16px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 0 0 rgba(0,0,0, 0.5);
+  }
+  &__less{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: #fff;
+  }
+}
+.glass{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  &__counter{
+    position: absolute;
+    font-size: 112px;
+  }
 }
