@@ -20,6 +20,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
   &__add{
     margin-bottom: 16px;
     width: 200px;
@@ -34,6 +35,17 @@ body{
     border: none;
     background: none;
     color: #fff;
+  }
+  &__error{
+    color: rgb(255, 0, 0);
+    background-color: black;
+    position: absolute;
+    bottom: 80px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  &__error--off{
+    display: none;
   }
 }
 .glass{
